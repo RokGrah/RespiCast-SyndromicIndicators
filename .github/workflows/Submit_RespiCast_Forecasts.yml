@@ -94,7 +94,7 @@ jobs:
         run: |
           wednesday_date=${{ steps.calculate_wednesday.outputs.wednesday_date }}
           git add ./model-output/safinea-PRFM/${wednesday_date}-safinea-PRFM.csv
-          git commit -m "AutoSubmitPR" || echo "Nothing to commit"
+          git commit -m "Safinea PRFM submission" || echo "Nothing to commit"
           git push -f -u origin pr-new-branch
 
       # Finally, open the pull request from local pr-new-branch to the main branch
