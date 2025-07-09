@@ -16,7 +16,7 @@ on:
 
   # Run on schedule
   schedule:
-  - cron: "00 19 * * 1"
+  - cron: "00 19 * * 2"
 
   # Or you can manually trigger the workflow
   workflow_dispatch:
